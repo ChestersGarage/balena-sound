@@ -33,6 +33,7 @@ services:
   multiroom-client:
     build: ./core/multiroom/client
     restart: on-failure
+    privileged: true
 
   # Plugins
   bluetooth:

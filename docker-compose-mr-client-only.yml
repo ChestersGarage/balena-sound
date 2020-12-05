@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+
+  sound-supervisor:
+    build: ./core/sound-supervisor
+    network_mode: host
+    ports:
+      - 3000:3000
+    labels:
+      io.balena.features.supervisor-api: 1
+
+  multiroom-client:
+    build: ./core/multiroom/client
+    restart: on-failure
+    privileged: true

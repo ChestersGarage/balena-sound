@@ -1,4 +1,116 @@
 - commits:
+    - subject: Add --hostID arg to Snapcast client startup
+      hash: 31e4ae725e41075f1d97d8c10ad5c8f6757cc1ec
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Mark Chester <mark@chesterfamily.org>
+        signed-off-by: Mark Chester <mark@chesterfamily.org>
+        Connects-to: '#332'
+        connects-to: '#332'
+      author: Mark Chester
+      nested: []
+  version: 3.4.7
+  date: 2021-01-19T18:59:07.932Z
+- commits:
+    - subject: 'upnp: Set UUID to differentiate between instances'
+      hash: ebc64a993457f4908c7ee2a9522f58eb772f276b
+      body: |
+        gmrender uses a hard coded UUID if none is supplied.
+        This resulted in all upnp servers in balena-sound
+        using the same ID, and clients showing whichever
+        server last broadacast.
+      footer:
+        Connects-to: '#380'
+        connects-to: '#380'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: jody@gnome.org
+        signed-off-by: jody@gnome.org
+      author: Jody Goldberg
+      nested: []
+  version: 3.4.6
+  date: 2021-01-08T19:51:19.686Z
+- commits:
+    - subject: 'docs: change to svg deploy with balena button'
+      hash: 3c341465bb403748b9bfdfd6e26221c0f273803d
+      body: |
+        change to svg logo
+      footer:
+        Closes: '#362'
+        closes: '#362'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Aaron Shaw <aaron@balena.io>
+        signed-off-by: Aaron Shaw <aaron@balena.io>
+      author: Aaron Shaw
+      nested: []
+    - subject: 'docs: add link to supported dacs'
+      hash: 36588938979480c360e54310702516bd12241a0b
+      body: |
+        add link to supported dacs
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Aaron Shaw <aaron@balena.io>
+        signed-off-by: Aaron Shaw <aaron@balena.io>
+      author: Aaron Shaw
+      nested: []
+    - subject: 'docs: add various dacs that have been tested'
+      hash: 99d2e7871ef6a168b554c35df684d4d2f926a12b
+      body: >
+        adds instructions for various dacs that have been tested to work with
+        balenaSound
+      footer:
+        Closes: '#345'
+        closes: '#345'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Aaron Shaw <aaron@balena.io>
+        signed-off-by: Aaron Shaw <aaron@balena.io>
+      author: Aaron Shaw
+      nested: []
+  version: 3.4.5
+  date: 2021-01-01T17:51:40.610Z
+- commits:
+    - subject: 'spotify: fix linear volume control issue'
+      hash: 21105d4664346f5e3a1e6260fe09da59ba8b5a5c
+      body: >
+        rasptify updated their librepsot debs to pull in the new changes in
+        librespot to move away from --linear-volume and to either
+        --mixer-linear-volume or --volume-ctrl linear. The latter seems to be
+        the preferred option judging by their latest docs update.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Connects-to: '#386'
+        connects-to: '#386'
+        Closes: '#386'
+        closes: '#386'
+        Signed-off-by: Aaron Shaw <aaron@balena.io>
+        signed-off-by: Aaron Shaw <aaron@balena.io>
+        Co-authored-by: wusala01 <nick.london94@gmail.com>
+        co-authored-by: wusala01 <nick.london94@gmail.com>
+      author: Aaron Shaw
+      nested: []
+  version: 3.4.4
+  date: 2020-12-31T16:55:50.168Z
+- commits:
+    - subject: 'docs: add iqaudio and JustBoom boards'
+      hash: 9ac3380462fb7bac17a4878a6c916b14f271cc4d
+      body: |
+        Add more tested JustBoom and iqaudio boards
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Aaron Shaw <shawaj@gmail.com>
+        signed-off-by: Aaron Shaw <shawaj@gmail.com>
+      author: Aaron Shaw
+      nested: []
+  version: 3.4.3
+  date: 2020-12-21T01:13:18.958Z
+- commits:
     - subject: 'docs: Patch ALSA bridge install script'
       hash: b85b466163620841a62f692f395b8490c5570f83
       body: ''
